@@ -4,7 +4,7 @@ from com.jinmini.models.titanic.controller import Controller
 
 app = Flask(__name__)
 
-@app.route('/') #함수 위에 있으면서 얘는 라우터야~
+@app.route('/') 
 def home():
     controller = Controller()
     controller.modeling("train.csv")
